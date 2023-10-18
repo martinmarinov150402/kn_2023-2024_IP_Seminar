@@ -2,15 +2,9 @@
 
 int main()
 {
-    int year;
-    int counter = 0;
-    while(std::cin >> year)
+    int arr[10];
+    for(int i = 0; i < 10; i++)
     {
-        if((year % 100 == 0 && year % 400 == 0)|| 
-           (year % 100 != 0 && year % 4 == 0))
-        {
-            counter ++;            
-        }
+        std::cin >> arr[i];
     }
-    std::cout << counter << std::endl;
 }
